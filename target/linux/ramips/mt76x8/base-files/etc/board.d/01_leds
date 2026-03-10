@@ -24,6 +24,17 @@ yuncore,m300)
 	ucidef_set_led_switch "lan" "lan" "green:lan" "switch0" "0xf"
 	ucidef_set_led_switch "wan" "wan" "green:wan" "switch0" "0x10"
 	;;
+cudy,lt300-v3)
+	ucidef_set_led_netdev "internet" "internet" "white:status" "usb0"
+	;;
+cudy,lt400e-v1)
+	ucidef_set_led_switch "lan1" "lan1" "blue:lan-1" "switch0" "0x08"
+	ucidef_set_led_switch "lan2" "lan2" "blue:lan-2" "switch0" "0x04"
+	ucidef_set_led_switch "lan3" "lan3" "blue:lan-3" "switch0" "0x02"
+	ucidef_set_led_switch "lan4" "lan4" "blue:lan-4" "switch0" "0x01"
+	ucidef_set_led_netdev "wifi" "wifi" "blue:wlan" "phy0-ap0"
+	ucidef_set_led_netdev "internet" "internet" "blue:internet" "usb0"
+	;;
 cudy,wr1000)
 	ucidef_set_led_switch "wan" "wan" "blue:wan" "switch0" "0x10"
 	ucidef_set_led_switch "lan1" "lan1" "blue:lan1" "switch0" "0x08"
@@ -93,6 +104,7 @@ tplink,archer-mr200-v5)
 	ucidef_set_led_netdev "wan" "wan" "white:wan" "wwan0"
 	;;
 cudy,re1200-outdoor-v1|\
+mercusys,mb130-4g-v1|\
 tplink,re200-v2|\
 tplink,re200-v3|\
 tplink,re200-v4|\
